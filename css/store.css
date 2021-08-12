@@ -1,13 +1,34 @@
-
- @charset 'utf8';
-
+@charset 'utf8';
+/* 공통부분 { */
 html {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 16px;
 }
 body {
-    color: rgb(29, 29, 31);    
+    color: rgb(29, 29, 31);
+    
 }
+
+.body-section {
+    padding: 50px 0 0;
+    margin: 0 auto;
+}
+
+.anchorImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-box h2 {
+    margin: 2em 0;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #f5f5f7;
+}
+
+/* 공통부분 }; */
 
 
 /* 메뉴바 { */
@@ -21,7 +42,6 @@ body {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     z-index: 999;
-
 }
 .menu-items-group {
     display: flex;
@@ -32,7 +52,6 @@ body {
     margin: 0 auto;
     padding: 0 12px; 
     box-sizing: border-box;
-
 }
 .menu-items-group .menu-item-logo {
     margin-right: auto;
@@ -47,41 +66,13 @@ body {
 }
 /* 메뉴바 }; */
 
-/* 콘텐츠 { */
 
-    /* 공통부분 { */
-.body-section {
-    padding: 50px 0 0;
-    max-width: 1000px;
-    /* border: red 1px solid; 가이드 라인 지워도 됨 */
-    margin: 0 auto;
-}
-.section-box {
-    /* border: 1px blue dashed; 가이드 라인 지워도 됨*/
-    width: 100%;
-    overflow: auto;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    /* flex-direction: column; */
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-.section-box::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-}
 
-.section-box h2 {
-    margin: 2em 0;
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 300;
-    color: #f5f5f7;
+
+/* section-0 { */
+#section-0 {
+    background: #f5f5f7;
 }
-
-    /* }; */
-
-/* section-0 */
 .section-box #text-box {
     position: absolute;
     top: 40%;
@@ -95,8 +86,9 @@ body {
     font-weight: 800;
     color: #f5f5f7;
 }
+/* section-0 }; */
 
-/* section-1 */
+/* section-1 { */
 .section-box h2 {
     margin-top: 100px;
     color: rgb(29, 29, 31);
@@ -113,32 +105,47 @@ body {
     margin-top: 1em;
     margin-left: 40px;
 }
+/* section-1 }; */
 
-
-/* 콘텐츠 }; */
-
+/* 푸터 { */
 footer {
     /* position: relative; */
     text-align: center;
     margin-top: 10em;
-    height: 400px;
+    height: 300px;
     background: #000;
     color: #f5f5f7;
 }
 footer ul {
     padding-top: 3em;
 }
-footer li:first-child {
-    font-size: 20px;
-    font-weight: 300;
-}
 footer li {
     margin-top: 1em;
     font-size: 14px;
     font-weight: 100;
 }
+footer li:first-child {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+footer li:last-child {
+    margin-top: 2.5em;
+    font-size: 14px;
+    font-weight: 100;
+}
+#com-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#com-info p {
+    margin-left: 1.5em;
+}
+/* 푸터 }; */
 
 @media (max-width: 800px) {
+
     .section-box {
         border: 1px blue dashed;
         width: 100%;
@@ -154,6 +161,5 @@ footer li {
         display: none; /* Chrome, Safari, Opera*/
     }
 
- 
-
 }
+ 
