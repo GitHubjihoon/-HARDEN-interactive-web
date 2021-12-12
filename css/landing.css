@@ -57,7 +57,21 @@ body {
     margin: 0 auto;
 }
 
+.txt-mask {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+}
 
+.txt-mask .span {
+    transform: translateY(0);
+    opacity: 1;
+    display: block;
+}
 
 /* 콘텐츠 }; */
 
@@ -125,7 +139,14 @@ footer li:last-child {
         background: coral;
         justify-content: center;
         align-items: center;
-        
+    }
+    .txt-mask {
+        position: absolute;
+        top: 20%;
+        left: 50vw;
+        transform: translate(-50%,-50%);
+        color: red;
+        font-size: 30px;
     }
 
 }
